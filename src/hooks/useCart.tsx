@@ -21,7 +21,7 @@ type CartContextValue = {
 };
 
 const CartContext = createContext<CartContextValue | undefined>(undefined);
-const STORAGE_KEY = "quickprintz-cart";
+const STORAGE_KEY = "tdstudios-cart";
 
 const readStoredCart = (): CartItem[] => {
   if (typeof window === "undefined") {

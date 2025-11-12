@@ -47,14 +47,14 @@ export default function MylarBags() {
 
   // simple gallery state
   const images = [
-    "/quickprintz_assets/storefront-interior.jpg", // fallback
+    "/tdstudios_assets/storefront-interior.jpg", // fallback
   ];
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch("/data/quick-printz-options.json", { cache: "no-store" });
+        const res = await fetch("/data/tdstudios-options.json", { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to load options");
         const data: Options = await res.json();
         setOpts(data);
@@ -68,7 +68,7 @@ export default function MylarBags() {
   }, []);
 
   useEffect(() => {
-    if (opts) document.title = `${opts.productName} • Quick Printz`;
+    if (opts) document.title = `${opts.productName} • TD STUDIOS`;
   }, [opts]);
 
   const price = useMemo(() => {
@@ -153,7 +153,7 @@ export default function MylarBags() {
               <details className="bg-black/40 backdrop-blur-md border border-white/10 rounded-xl p-4" open>
                 <summary className="cursor-pointer font-semibold text-white">Description</summary>
                 <p className="mt-2 text-sm text-white/80">
-                  Premium odor-resistant Mylar bags with printed labels applied by Quick Printz.
+                  Premium odor-resistant Mylar bags with printed labels applied by TD STUDIOS.
                   Choose matte, gloss, or holographic finishes. Designed for cannabis compliance layouts.
                 </p>
               </details>

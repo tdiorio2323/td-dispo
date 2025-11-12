@@ -27,6 +27,9 @@ const logoWatermarkStyle: CSSProperties = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "60%",
+  height: "auto",
+  maxHeight: "80%",
+  objectFit: "contain",
   opacity: 0.85,
   zIndex: 10,
   filter: "drop-shadow(0 0 20px rgba(0, 0, 0, 0.5))",
@@ -112,7 +115,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection onPrefetchDesigns={prefetchDesigns} />
-      <LightningDivider />
 
       <section className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
@@ -175,12 +177,12 @@ const Index = () => {
                         className="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-sm group shadow-glow transition-transform duration-500 hover:-translate-y-1.5"
                       >
                         <img
-                          src={design.publicUrl || "/quickprintz_assets/quickprintz-256.png"}
+                          src={design.publicUrl || "/tdstudios_assets/tdstudios-256.png"}
                           alt={design.name}
                           className="w-full h-full object-cover transition duration-300 group-hover:scale-[1.04]"
                           onError={(e) => {
                             (e.target as HTMLImageElement).src =
-                              "/quickprintz_assets/quickprintz-256.png";
+                              "/tdstudios_assets/tdstudios-256.png";
                           }}
                           loading="lazy"
                           draggable={false}
@@ -188,8 +190,8 @@ const Index = () => {
                         />
                         <div style={watermarkOverlayStyle} aria-hidden="true" />
                         <img
-                          src="/quickprintz_assets/quickprintz-512.png"
-                          alt="Quick Printz Watermark"
+                          src="/td-usa.png"
+                          alt="TD STUDIOS Watermark"
                           style={logoWatermarkStyle}
                           aria-hidden="true"
                           draggable={false}
@@ -231,14 +233,11 @@ const Index = () => {
         </div>
       </section>
 
-      <LightningDivider />
-
       <div id="services">
         <ServicesGrid />
       </div>
 
       {/* Four Glass Cards Section */}
-      <LightningDivider />
       <div className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -285,7 +284,7 @@ const Index = () => {
               asChild
             >
               <a
-                href="https://www.instagram.com/quickprintz401/"
+                href="https://www.instagram.com/tdstudiosco/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -302,8 +301,8 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           <div className="rounded-3xl overflow-hidden bg-black/40 p-2 h-full">
             <img
-              src="/quickprintz_assets/mylar-bags.jpg"
-              srcSet="/quickprintz_assets/mylar-bags.jpg 1x, /quickprintz_assets/mylar-bags.jpg 2x"
+              src="/tdstudios_assets/mylar-bags.jpg"
+              srcSet="/tdstudios_assets/mylar-bags.jpg 1x, /tdstudios_assets/mylar-bags.jpg 2x"
               alt="Mylar Bags"
               className="aspect-square rounded-2xl w-full h-full object-cover"
             />
@@ -325,7 +324,7 @@ const Index = () => {
               asChild
             >
               <a
-                href="https://www.instagram.com/quickprintz401/"
+                href="https://www.instagram.com/tdstudiosco/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -354,7 +353,7 @@ const Index = () => {
               asChild
             >
               <a
-                href="https://www.instagram.com/quickprintz401/"
+                href="https://www.instagram.com/tdstudiosco/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -364,8 +363,8 @@ const Index = () => {
           </div>
           <div className="rounded-3xl overflow-hidden bg-black/40 p-2 h-full">
             <img
-              src="/quickprintz_assets/custom-boxes.jpg"
-              srcSet="/quickprintz_assets/custom-boxes.jpg 1x, /quickprintz_assets/custom-boxes.jpg 2x"
+              src="/tdstudios_assets/custom-boxes.jpg"
+              srcSet="/tdstudios_assets/custom-boxes.jpg 1x, /tdstudios_assets/custom-boxes.jpg 2x"
               alt="Custom Boxes"
               className="aspect-square rounded-2xl w-full h-full object-cover"
             />
@@ -375,8 +374,8 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           <div className="rounded-3xl overflow-hidden bg-black/40 p-2 h-full">
             <img
-              src="/quickprintz_assets/in-house-design.jpg"
-              srcSet="/quickprintz_assets/in-house-design.jpg 1x, /quickprintz_assets/in-house-design.jpg 2x"
+              src="/tdstudios_assets/in-house-design.jpg"
+              srcSet="/tdstudios_assets/in-house-design.jpg 1x, /tdstudios_assets/in-house-design.jpg 2x"
               alt="In-House Design"
               className="aspect-square rounded-2xl w-full h-full object-cover"
             />
@@ -424,8 +423,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="bg-card/50 backdrop-blur-sm border-border/50 rounded-[20px] h-96 shadow-glow hover:shadow-[0_0_40px_hsl(var(--lightning-yellow)/0.5)] transition-all duration-300 overflow-hidden">
             <img
-              src="/quickprintz_assets/storefront-interior.jpg"
-              alt="Quick Printz storefront interior"
+              src="/tdstudios_assets/storefront-interior.jpg"
+              alt="TD STUDIOS storefront interior"
               className="w-full h-full object-cover"
             />
           </div>

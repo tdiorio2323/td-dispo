@@ -23,14 +23,10 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <BrandMark className="h-10 w-10" />
-              <span className="text-2xl font-bold">
-                <span className="text-foreground">Quick</span>
-                <span className="text-lightning-yellow">Printz</span>
-              </span>
+              <span className="text-2xl font-bold text-foreground">TD STUDIOS</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Lightning-fast professional printing services for cannabis businesses, events, and brands.
+              Boutique print and packaging studio delivering concept-to-production support for emerging brands.
             </p>
           </div>
 
@@ -53,16 +49,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Quick Links Column */}
+          {/* Studio Links Column */}
           <div>
             <h3 className="text-lightning-yellow font-semibold mb-4 text-sm uppercase tracking-wider">
-              Quick Links
+              Studio Links
             </h3>
             <ul className="space-y-3">
               {[
                 { name: "Home", href: "/" },
                 { name: "Premade Designs", href: "/premadedesigns" },
-                { name: "Mylar Bags", href: "https://instagram.com/quickprintz401", external: true },
+                { name: "Mylar Bags", href: "https://instagram.com/tdstudiosco", external: true },
                 { name: "Custom Designs", href: "https://tdstudioshq.com/mylars", external: true },
                 { name: "Contact", href: "/contact" }
               ].map((link) => (
@@ -88,13 +84,13 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Instagram className="w-4 h-4 text-lightning-yellow mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  @QUICKPRINTZ401
+                  @TDSTUDIOSCO
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-lightning-yellow mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  derekcasiano16@gmail.com
+                  tyler@tdstudiosny.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -109,9 +105,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border/20 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border/20 flex flex-col justify-center items-center gap-4">
+          <BrandMark className="h-48 w-auto" />
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Quick Printz. All rights reserved.
+            © {currentYear} TD STUDIOS. All rights reserved.
           </p>
         </div>
       </div>

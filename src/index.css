@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 100%;
 
-    /* Quick Printz Yellow primary */
-    --primary: 60 100% 50%;
+    /* USA Patriotic primary - Blue */
+    --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     /* White secondary */
@@ -30,8 +30,8 @@ All colors MUST be HSL.
     --muted: 0 0% 10%;
     --muted-foreground: 0 0% 70%;
 
-    /* Quick Printz Yellow accent */
-    --accent: 60 100% 50%;
+    /* USA Patriotic accent - Red */
+    --accent: 0 84% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,23 +39,29 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 10%;
-    --ring: 60 100% 50%;
+    --ring: 220 100% 50%;
 
-    /* Quick Printz Yellow */
+    /* USA Patriotic colors */
+    --usa-red: 0 84% 60%;
+    --usa-blue: 220 100% 50%;
+    --usa-white: 0 0% 100%;
     --lightning-yellow: 60 100% 50%;
     --lightning-yellow-foreground: 0 0% 100%;
 
-    /* Quick Printz themed gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(60 100% 50%), hsl(65 100% 55%));
+    /* USA Patriotic themed gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 100% 50%), hsl(0 84% 60%));
+    --gradient-patriotic: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 0% 100%), hsl(220 100% 50%));
+    --gradient-patriotic-stripes: linear-gradient(180deg, hsl(0 84% 60%) 0%, hsl(0 84% 60%) 14%, hsl(0 0% 100%) 14%, hsl(0 0% 100%) 28%, hsl(0 84% 60%) 28%, hsl(0 84% 60%) 42%, hsl(0 0% 100%) 42%, hsl(0 0% 100%) 56%, hsl(220 100% 50%) 56%);
     --gradient-cannabis: linear-gradient(135deg, hsl(60 100% 50%), hsl(0 0% 100%));
     --gradient-lightning: linear-gradient(135deg, hsl(60 100% 50%), hsl(65 100% 55%), hsl(60 100% 50%));
     --gradient-dark: linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 5%));
-    --gradient-overlay: linear-gradient(45deg, hsl(0 0% 0% / 0.9), hsl(60 100% 50% / 0.1));
+    --gradient-overlay: linear-gradient(45deg, hsl(0 0% 0% / 0.9), hsl(220 100% 50% / 0.1));
 
-    /* Quick Printz themed shadows and effects */
-    --shadow-premium: 0 25px 50px -12px hsl(60 100% 50% / 0.25);
+    /* USA Patriotic themed shadows and effects */
+    --shadow-premium: 0 25px 50px -12px hsl(220 100% 50% / 0.25);
     --shadow-dark: 0 10px 25px -5px hsl(0 0% 0% / 0.5);
-    --shadow-glow: 0 0 30px hsl(60 100% 50% / 0.3);
+    --shadow-glow: 0 0 30px hsl(220 100% 50% / 0.3);
+    --shadow-red-glow: 0 0 30px hsl(0 84% 60% / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -125,23 +131,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply text-white;
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+    @apply text-white bg-black;
   }
 
   /* Custom utility classes */
@@ -166,8 +156,20 @@ All colors MUST be HSL.
     background: var(--gradient-overlay);
   }
 
+  .gradient-patriotic {
+    background: var(--gradient-patriotic);
+  }
+
+  .gradient-patriotic-stripes {
+    background: var(--gradient-patriotic-stripes);
+  }
+
   .shadow-premium {
     box-shadow: var(--shadow-premium);
+  }
+
+  .shadow-red-glow {
+    box-shadow: var(--shadow-red-glow);
   }
 
   .shadow-dark {
@@ -338,6 +340,17 @@ All colors MUST be HSL.
     }
   }
 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   /* Design gallery watermark styles */
   .watermark-overlay {
     pointer-events: none;
@@ -359,6 +372,9 @@ All colors MUST be HSL.
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
+    height: auto;
+    max-height: 80%;
+    object-fit: contain;
     opacity: 0.85;
     z-index: 10;
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));

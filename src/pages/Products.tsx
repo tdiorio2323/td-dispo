@@ -19,57 +19,57 @@ const products: Product[] = [
     id: 1,
     title: "Product 1",
     price: "$29.99",
-    image1: "/quickprintz_assets/quickprintz-256.png",
-    image2: "/quick-printz-storefront.jpg"
+    image1: "/tdstudios_assets/tdstudios-256.png",
+    image2: "/tdstudios-storefront.jpg"
   },
   {
     id: 2,
     title: "Product 2",
     price: "$34.99",
-    image1: "/quick-printz-storefront.jpg",
-    image2: "/quickprintz_assets/quickprintz-256.png"
+    image1: "/tdstudios-storefront.jpg",
+    image2: "/tdstudios_assets/tdstudios-256.png"
   },
   {
     id: 3,
     title: "Product 3",
     price: "$39.99",
-    image1: "/quickprintz_assets/quickprintz-256.png",
-    image2: "/quick-printz-storefront.jpg"
+    image1: "/tdstudios_assets/tdstudios-256.png",
+    image2: "/tdstudios-storefront.jpg"
   },
   {
     id: 4,
     title: "Product 4",
     price: "$44.99",
-    image1: "/quick-printz-storefront.jpg",
-    image2: "/quickprintz_assets/quickprintz-256.png"
+    image1: "/tdstudios-storefront.jpg",
+    image2: "/tdstudios_assets/tdstudios-256.png"
   },
   {
     id: 5,
     title: "Product 5",
     price: "$49.99",
-    image1: "/quickprintz_assets/quickprintz-256.png",
-    image2: "/quick-printz-storefront.jpg"
+    image1: "/tdstudios_assets/tdstudios-256.png",
+    image2: "/tdstudios-storefront.jpg"
   },
   {
     id: 6,
     title: "Product 6",
     price: "$54.99",
-    image1: "/quick-printz-storefront.jpg",
-    image2: "/quickprintz_assets/quickprintz-256.png"
+    image1: "/tdstudios-storefront.jpg",
+    image2: "/tdstudios_assets/tdstudios-256.png"
   },
   {
     id: 7,
     title: "Product 7",
     price: "$59.99",
-    image1: "/quickprintz_assets/quickprintz-256.png",
-    image2: "/quick-printz-storefront.jpg"
+    image1: "/tdstudios_assets/tdstudios-256.png",
+    image2: "/tdstudios-storefront.jpg"
   },
   {
     id: 8,
     title: "Product 8",
     price: "$64.99",
-    image1: "/quick-printz-storefront.jpg",
-    image2: "/quickprintz_assets/quickprintz-256.png"
+    image1: "/tdstudios-storefront.jpg",
+    image2: "/tdstudios_assets/tdstudios-256.png"
   }
 ];
 

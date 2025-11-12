@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a web application for "Quick Printz", a print-on-demand service. The application is built using the following technologies:
+This is a web application for "TD STUDIOS", a print-on-demand service. The application is built using the following technologies:
 
 *   **Vite:** A fast build tool for modern web projects.
 *   **React:** A JavaScript library for building user interfaces.

@@ -1,11 +1,12 @@
 export default function BrandMark({ className = "" }: { className?: string }) {
   return (
     <img
-      src="/quickprintz_assets/quickprintz-256.png"
-      alt="Quick Printz logo"
-      width={128}
-      height={128}
+      src="/td-usa.png"
+      alt="TD STUDIOS logo"
+      width={64}
+      height={96}
       className={className}
+      style={{ objectFit: 'contain' }}
       loading="eager"
       decoding="async"
     />

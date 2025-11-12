@@ -77,7 +77,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Instagram</h3>
-                    <p className="text-sm text-white/70">@quickprintz401</p>
+                    <p className="text-sm text-white/70">@tdstudiosco</p>
                   </div>
                 </div>
               </Card>
@@ -89,7 +89,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Email</h3>
-                    <p className="text-sm text-white/70">derekcasiano16@gmail.com</p>
+                    <p className="text-sm text-white/70">tyler@tdstudiosny.com</p>
                   </div>
                 </div>
               </Card>
@@ -109,6 +109,7 @@ const ContactPage = () => {
 
             <Card className="lg:col-span-2 p-8 bg-black/40 border border-white/10 backdrop-blur-sm">
               <form onSubmit={handleSubmit} className="space-y-6">
+                <input type="hidden" name="_subject" value="[TD STUDIOS] Website Contact" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name *</Label>
@@ -140,7 +141,7 @@ const ContactPage = () => {
                       id="phone"
                       name="phone"
                       className="bg-background/50 border-white/20 focus:border-lightning-yellow"
-                      placeholder="(555) 123-4567"
+                      placeholder="347-485-9935"
                     />
                   </div>
                   <div className="space-y-2">
@@ -160,7 +161,7 @@ const ContactPage = () => {
                     id="interest"
                     name="interest"
                     required
-                    className="w-full rounded-lg bg-background/50 border border-white/20 px-3 py-2 text-sm focus:border-lightning-yellow focus:outline-none"
+                    className="w-full rounded-lg bg-background/50 border border-white/20 px-3 py-2 text-sm text-black focus:border-lightning-yellow focus:outline-none"
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -193,7 +194,7 @@ const ContactPage = () => {
                 ) : null}
                 {status === "error" ? (
                   <p className="text-sm text-red-300">
-                    Something went wrong. Please email derekcasiano16@gmail.com directly.
+                    Something went wrong. Please email tyler@tdstudiosny.com directly.
                   </p>
                 ) : null}
 

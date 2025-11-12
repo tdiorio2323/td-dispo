@@ -9,6 +9,10 @@ import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const ContactForm = () => {
+  const FORM_ENDPOINT = "https://formspree.io/f/movkvrpz";
+  const BRAND_EMAIL = "tyler@tdstudiosny.com";
+  const BRAND_PHONE = "347-485-9935";
+  const BRAND_NAME = "TD STUDIOS";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,12 +21,27 @@ const ContactForm = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted:", formData);
-    // TODO: Implement form submission
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    try {
+      await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          ...formData,
+          subject: `[${BRAND_NAME}] Website Inquiry`,
+          to: BRAND_EMAIL
+        })
+      });
+      alert("Thank you for your message! The TD STUDIOS team will reach out shortly.");
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+      alert(`We couldn't deliver your message. Please email ${BRAND_EMAIL} directly.`);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -58,7 +77,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-sm text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-sm text-muted-foreground">{BRAND_PHONE}</p>
                   </div>
                 </div>
               </Card>
@@ -70,7 +89,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-sm text-muted-foreground">hello@quickprintz.com</p>
+                    <p className="text-sm text-muted-foreground">{BRAND_EMAIL}</p>
                   </div>
                 </div>
               </Card>
@@ -118,7 +137,7 @@ const ContactForm = () => {
                       onChange={handleChange}
                       required
                       className="bg-background/50 border-border/50 focus:border-lightning-yellow"
-                      placeholder="your@email.com"
+                      placeholder={BRAND_EMAIL}
                     />
                   </div>
                 </div>
@@ -133,7 +152,7 @@ const ContactForm = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="bg-background/50 border-border/50 focus:border-lightning-yellow"
-                      placeholder="(555) 123-4567"
+                      placeholder={BRAND_PHONE}
                     />
                   </div>
 

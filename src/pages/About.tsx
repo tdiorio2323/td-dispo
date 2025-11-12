@@ -28,7 +28,7 @@ export default function About() {
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            About <span className="text-lightning-yellow">Quick Printz</span>
+            About <span className="text-lightning-yellow">TD STUDIOS</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Your trusted partner for premium custom packaging and design services. 
@@ -62,7 +62,7 @@ export default function About() {
             </div>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Founded in 2019, Quick Printz emerged from a simple mission: to provide cannabis businesses and retailers 
+                Founded in 2019, TD STUDIOS emerged from a simple mission: to provide cannabis businesses and retailers 
                 with premium packaging that reflects their brand quality. What started as a small operation has grown into 
                 a trusted partner for hundreds of businesses nationwide.
               </p>
@@ -124,7 +124,7 @@ export default function About() {
           <Card className="p-8 md:p-12 bg-card/50 border-border/50">
             <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join hundreds of satisfied customers who trust Quick Printz for their packaging needs. 
+              Join hundreds of satisfied customers who trust TD STUDIOS for their packaging needs. 
               Let's bring your vision to life with premium custom packaging.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

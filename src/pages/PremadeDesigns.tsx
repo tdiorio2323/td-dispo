@@ -347,8 +347,8 @@ const PremadeDesigns = () => {
                           />
                           <div className="watermark-overlay" aria-hidden="true" />
                           <img
-                            src="/quickprintz_assets/quickprintz-512.png"
-                            alt="Quick Printz Watermark"
+                            src="/td-usa.png"
+                            alt="TD STUDIOS Watermark"
                             className="logo-watermark"
                             aria-hidden="true"
                             draggable={false}

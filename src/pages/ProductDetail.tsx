@@ -87,7 +87,7 @@ const ProductDetail = () => {
       name: `${bagSize} Custom Mylar Bags`,
       price: Number(totalPrice.toFixed(2)),
       quantity: 1,
-      image: "/quickprintz_assets/quickprintz-256.png",
+      image: "/tdstudios_assets/tdstudios-256.png",
       metadata: {
         Color: bagColor,
         Finish: bagFinish,
@@ -117,7 +117,7 @@ const ProductDetail = () => {
               <Card className="relative aspect-square bg-card/50 backdrop-blur-sm border-border/50 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center p-12">
                   <img
-                    src="/quickprintz_assets/quickprintz-256.png"
+                    src="/tdstudios_assets/tdstudios-256.png"
                     alt="Custom Cannabis Mylar Bags"
                     className="w-full h-full object-contain"
                   />

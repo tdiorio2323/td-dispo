@@ -189,10 +189,10 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Quick Facts */}
+      {/* Studio Stats */}
       <section className="py-16 px-6 bg-card/20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Quick Printz?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose TD STUDIOS?</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 text-center bg-card/50 border-border/50">

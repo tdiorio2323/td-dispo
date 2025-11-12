@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Quick Printz website - a Vite + React + TypeScript application built with shadcn/ui components and Tailwind CSS. Uses Supabase as a backend and includes custom branding with a Lightning Yellow, Black, and White theme.
+TD STUDIOS website - a Vite + React + TypeScript application built with shadcn/ui components and Tailwind CSS. Uses Supabase as a backend and features a patriotic USA theme with red, white, and blue color scheme.
 
 ## Development Commands
 
@@ -49,7 +49,7 @@ pnpm test:coverage
 - `src/integrations/supabase/` - Supabase client configuration and type definitions
 - `src/lib/` - Utility functions (cn utility for className merging)
 - `src/hooks/` - Custom React hooks (use-toast, use-mobile, useCart)
-- `public/quickprintz_assets/` - Brand assets and images
+- `public/tdstudios_assets/` - Brand assets and images
 - `public/data/` - JSON data files for products and content
 
 ### Routing
@@ -81,38 +81,47 @@ Uses React Router v6 with lazy loading for pages. Routes are defined in `src/App
 **Cart System**:
 - Cart context wraps entire app in `App.tsx`
 - Uses `useCart()` hook to access cart state and methods
-- Persists cart data to localStorage with key `quickprintz-cart`
+- Persists cart data to localStorage with key `tdstudios-cart`
 - Cart items include: id, name, price, quantity, optional image/href/metadata
 - Methods: `addItem`, `removeItem`, `updateQuantity`, `clearCart`
 - Computed values: `subtotal`, `totalItems`
 
 ### Styling System
 
-Uses a custom Quick Printz design system defined in `src/index.css`:
+Uses a custom TD STUDIOS design system defined in `src/index.css`:
 
 **Global Background**:
-- Fixed background image at `/background.jpg` with dark overlay (70% black)
-- Background covers entire viewport and is fixed during scroll
-- All content appears on top of this background layer
+- Dynamic image mosaic background using designs from Supabase bucket
+- 5x5 grid of rotating design images (25 cells)
+- Images cycle automatically every 1.5 seconds with smooth fade-in animation
+- 20% opacity with patriotic red/white/blue gradient overlays
+- 70% black overlay for readability
+- Implemented in `GlobalBackground` component, rendered globally in `App.tsx`
+- All page content appears on top with proper z-index layering
 
 **Brand Colors (HSL format)**:
-- Primary/Accent: Lightning Yellow (`--lightning-yellow: 60 100% 50%`)
+- Primary: USA Blue (`--primary: 220 100% 50%`)
+- Accent: USA Red (`--accent: 0 84% 60%`)
 - Background: Black (`--background: 0 0% 0%`)
 - Foreground: White (`--foreground: 0 0% 100%`)
 - Card: Dark gray (`--card: 0 0% 5%`)
+- Legacy Lightning Yellow preserved (`--lightning-yellow: 60 100% 50%`)
 
 **Custom Gradient Classes**:
-- `.gradient-primary` - Lightning yellow gradient
-- `.gradient-cannabis` - Yellow to white gradient
+- `.gradient-primary` - Blue to red patriotic gradient
+- `.gradient-patriotic` - Red, white, and blue gradient
+- `.gradient-patriotic-stripes` - Patriotic striped gradient
+- `.gradient-cannabis` - Yellow to white gradient (legacy)
 - `.gradient-dark` - Black to dark gray gradient
-- `.gradient-lightning` - Animated shimmer effect with keyframe animation
-- `.gradient-overlay` - Dark overlay with yellow accent
+- `.gradient-lightning` - Animated shimmer effect with keyframe animation (legacy)
+- `.gradient-overlay` - Dark overlay with blue accent
 - `.lightning-shimmer` - Continuous shimmer animation (10s duration)
 
 **Custom Shadow Classes**:
-- `.shadow-premium` - Yellow glow shadow
+- `.shadow-premium` - Blue glow shadow
+- `.shadow-red-glow` - Red glow shadow
 - `.shadow-dark` - Deep black shadow
-- `.shadow-glow` - Yellow glow effect
+- `.shadow-glow` - Blue glow effect
 
 **Custom Transition Classes**:
 - `.transition-smooth` - Smooth easing transition (0.4s cubic-bezier)
@@ -138,6 +147,8 @@ Uses a custom Quick Printz design system defined in `src/index.css`:
   - `VITE_SUPABASE_URL`
   - `VITE_SUPABASE_PUBLISHABLE_KEY`
 - Authentication configured with localStorage persistence and auto-refresh
+- Contact form submission via Formspree endpoint: `https://formspree.io/f/movkvrpz`
+  - Used in `src/pages/Contact.tsx` and `src/pages/ContactForm.tsx`
 
 ### Path Aliases
 
@@ -209,12 +220,14 @@ Deploy this project using your preferred hosting platform (Vercel, Netlify, etc.
 
 ## Asset Management
 
-- Brand assets stored in `public/quickprintz_assets/`
-- Logo available at `/quickprintz_assets/quickprintz-256.png`
+- Brand assets stored in `public/tdstudios_assets/`
+- Primary logo: `/td-usa.png` (patriotic TD STUDIOS logo with American flag styling)
+- Additional logos in `public/tdstudios_assets/` (tdstudios-256.png, tdstudios-512.png, tdstudios-1024.png)
 - Design gallery images in `public/mylar-designs/` (100+ product images)
-- Calypso mylars in `public/quickprintz_assets/calypso-mylars/`
+- Calypso mylars in `public/tdstudios_assets/calypso-mylars/`
 - PWA icons and manifests in `public/`
-- Storefront photo at `/quick-printz-storefront.jpg`
+- Storefront photo at `/tdstudios-storefront.jpg`
+- Product configuration data in `public/data/tdstudios-options.json` (defines available sizes, colors, finishes, print styles, quantities, and addons)
 
 ## Key Features
 

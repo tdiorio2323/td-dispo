@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-Quick Printz is a Vite + React + TypeScript SPA. `src/main.tsx` bootstraps `App`, which lazy-loads routes from `src/pages`. Shared widgets live in `src/components`, while raw shadcn primitives stay isolated in `src/components/ui` until wrapped. Keep hooks in `src/hooks`, API helpers in `src/lib`, and Supabase logic in `src/integrations/supabase` to confine side effects. Static assets belong in `public/`, imported imagery goes in `src/assets/`, and production bundles emit to `dist/`. Place feature tests under `src/__tests__/`.
+TD STUDIOS is a Vite + React + TypeScript SPA. `src/main.tsx` bootstraps `App`, which lazy-loads routes from `src/pages`. Shared widgets live in `src/components`, while raw shadcn primitives stay isolated in `src/components/ui` until wrapped. Keep hooks in `src/hooks`, API helpers in `src/lib`, and Supabase logic in `src/integrations/supabase` to confine side effects. Static assets belong in `public/`, imported imagery goes in `src/assets/`, and production bundles emit to `dist/`. Place feature tests under `src/__tests__/`.
 
 ## Build, Test, and Development Commands
 - `pnpm install` — sync dependencies whenever lockfiles change.

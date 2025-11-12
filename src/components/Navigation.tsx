@@ -9,8 +9,12 @@ const Navigation = () => {
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
 
   const navigation = [
-    { 
-      name: "Shop", 
+    {
+      name: "Home",
+      href: "/"
+    },
+    {
+      name: "Shop",
       href: "/products",
       hasDropdown: true,
       children: [
@@ -30,15 +34,9 @@ const Navigation = () => {
         { name: "Quote Calculator", href: "/pricing", icon: Calculator, description: "Get instant pricing" }
       ]
     },
-    { 
-      name: "Company", 
-      href: "/about",
-      hasDropdown: true,
-      children: [
-        { name: "About Us", href: "/about", icon: Info, description: "Our story and values" },
-        { name: "Portfolio", href: "/about#portfolio", icon: Sparkles, description: "See our work" },
-        { name: "Contact", href: "/contact", icon: Package, description: "Get in touch" }
-      ]
+    {
+      name: "Contact",
+      href: "/contact"
     }
   ];
 
@@ -49,8 +47,8 @@ const Navigation = () => {
         <div className="hidden lg:block">
           {/* Logo centered on top */}
           <div className="flex justify-center pt-6 pb-4">
-            <a href="/" aria-label="Quick Printz Home">
-              <BrandMark className="h-32 w-32" />
+            <a href="/" aria-label="TD STUDIOS Home">
+              <BrandMark className="h-32 w-auto" />
             </a>
           </div>
 
@@ -128,8 +126,8 @@ const Navigation = () => {
               />
             </div>
             {/* Centered Logo */}
-            <a href="/" aria-label="Quick Printz Home">
-              <BrandMark className="h-16 w-16" />
+            <a href="/" aria-label="TD STUDIOS Home">
+              <BrandMark className="h-16 w-auto" />
             </a>
 
             {/* Mobile Menu Button - Top Right */}

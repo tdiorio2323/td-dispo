@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# === Quick Printz — Generate PWA Icons ===
+# === TD STUDIOS — Generate PWA Icons ===
 # Requires: sharp-cli (npm i -g sharp-cli)
 
-LOGO="public/lovable-uploads/quickprintz-logo.png"   # source logo
+LOGO="public/lovable-uploads/tdstudios-logo.png"   # source logo
 OUTDIR="public"          # where icons will go
 
 if ! command -v sharp &> /dev/null; then

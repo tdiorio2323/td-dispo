@@ -1,8 +1,8 @@
-# Quick Printz Website
+# TD STUDIOS Website
 
 ## Project info
 
-**Repository**: https://github.com/tdiorio2323/shop-quick-printz
+**Repository**: https://github.com/tdiorio2323/tdstudios
 
 ## How can I edit this code?
 
@@ -16,10 +16,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/tdiorio2323/shop-quick-printz.git
+git clone https://github.com/tdiorio2323/tdstudios.git
 
 # Step 2: Navigate to the project directory.
-cd shop-quick-printz
+cd tdstudios
 
 # Step 3: Install the necessary dependencies.
 pnpm install

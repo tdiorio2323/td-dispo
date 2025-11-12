@@ -5,9 +5,9 @@ This report lists all the broken and potentially broken links found in the codeb
 
 ## Broken Asset Links
 
-*   `/quickprintz_assets/mylar-hero.jpg` in `src/pages/MylarBags.tsx`
-*   `/quickprintz_assets/mylar-alt-1.jpg` in `src/pages/MylarBags.tsx`
-*   `/quickprintz_assets/mylar-alt-2.jpg` in `src/pages/MylarBags.tsx`
+*   `/tdstudios_assets/mylar-hero.jpg` in `src/pages/MylarBags.tsx`
+*   `/tdstudios_assets/mylar-alt-1.jpg` in `src/pages/MylarBags.tsx`
+*   `/tdstudios_assets/mylar-alt-2.jpg` in `src/pages/MylarBags.tsx`
 
 ## Broken Internal Routes
 
@@ -22,7 +22,7 @@ This report lists all the broken and potentially broken links found in the codeb
 
 ## Broken Other Links
 
-*   `/quick-printz/quote.html` in `src/pages/MylarBags.tsx`
+*   (none currently tracked — rerun the checker after adding new TD STUDIOS pages)
 
 ## Potentially Broken External Links
 
@@ -31,4 +31,4 @@ This report lists all the broken and potentially broken links found in the codeb
 
 ## Needs Manual Verification
 
-*   `https://www.instagram.com/quickprintz401/` in `src/pages/Index.tsx` and `src/components/Navigation.tsx` (requires login)
+*   `https://www.instagram.com/tdstudiosny/` in `src/pages/Index.tsx` and `src/components/Navigation.tsx` (requires login)

@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, ExternalLink, Filter } from "lucide-react";
 const portfolioItems = [
   {
     id: 1,
-    image: "/quickprintz_assets/quickprintz-256.png",
+    image: "/tdstudios_assets/tdstudios-256.png",
     title: "Premium Mylar Collection",
     category: "Bags",
     description: "Custom-designed mylar bags with holographic effects and premium finishes for high-end dispensaries.",
@@ -14,7 +14,7 @@ const portfolioItems = [
   },
   {
     id: 2,
-    image: "/quickprintz_assets/quickprintz-256.png",
+    image: "/tdstudios_assets/tdstudios-256.png",
     title: "Luxury Box Series",
     category: "Boxes", 
     description: "Child-resistant luxury packaging with magnetic closures and premium unboxing experience.",
@@ -22,7 +22,7 @@ const portfolioItems = [
   },
   {
     id: 3,
-    image: "/quickprintz_assets/quickprintz-256.png",
+    image: "/tdstudios_assets/tdstudios-256.png",
     title: "Brand Transformation",
     category: "Full Brand Identity",
     description: "Complete rebrand for established dispensary including logo, packaging, and marketing materials.",
@@ -30,7 +30,7 @@ const portfolioItems = [
   },
   {
     id: 4,
-    image: "/quickprintz_assets/quickprintz-256.png",
+    image: "/tdstudios_assets/tdstudios-256.png",
     title: "Boutique Cannabis Bags",
     category: "Bags",
     description: "Small-batch artisan cannabis packaging with hand-finished details and premium materials.",
@@ -38,7 +38,7 @@ const portfolioItems = [
   },
   {
     id: 5,
-    image: "/quickprintz_assets/quickprintz-256.png",
+    image: "/tdstudios_assets/tdstudios-256.png",
     title: "Compliance Ready Containers",
     category: "Boxes",
     description: "State-compliant packaging solutions with tamper-evident seals and required labeling areas.",
