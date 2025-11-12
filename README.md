@@ -2,7 +2,7 @@
 
 ## Project info
 
-**Repository**: https://github.com/tdiorio2323/tdstudios
+**Repository**: https://github.com/tdiorio2323/td-dispo
 
 ## How can I edit this code?
 
