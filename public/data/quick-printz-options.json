@@ -1,0 +1,15 @@
+{
+  "productName": "Custom Mylar Bags (Printed & Applied)",
+  "sizes": [
+    {"id":"3.5g","label":"3.5g (4x5)"},
+    {"id":"7g","label":"7g (5x7)"},
+    {"id":"14g","label":"14g (6x9)"},
+    {"id":"1oz","label":"1oz (7x10)"},
+    {"id":"1lb","label":"1lb (12x16)"}
+  ],
+  "colors": ["Black","White","Clear (front or back)","Silver Foil","Kraft Brown"],
+  "finishes": ["Matte","Gloss","Holographic"],
+  "printStyles": ["Full Color Print","Matte Lamination","Gloss Lamination","Spot Gloss","UV Spot Gloss","Holographic Overlay"],
+  "quantities": [100,250,500,1000,2500,5000],
+  "addons": ["Zipper","Child Resistant Seal","Window Cut-Out"]
+}

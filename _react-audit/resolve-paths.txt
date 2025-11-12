@@ -1,0 +1,16 @@
+=== POST-INSTALL VERIFICATION ===
+=== PNPM LS REACT REACT-DOM ===
+Legend: production dependency, optional only, dev only
+
+vite_react_shadcn_ts@0.0.0 /Users/tylerdiorio/QUICKPRINTZWEBSITE (PRIVATE)
+
+dependencies:
+react 18.3.1
+react-dom 18.3.1
+
+=== NODE REQUIRE.RESOLVE PATHS ===
+react: /Users/tylerdiorio/QUICKPRINTZWEBSITE/node_modules/.pnpm/react@18.3.1/node_modules/react/index.js
+react-dom: /Users/tylerdiorio/QUICKPRINTZWEBSITE/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js
+
+=== FIND PHYSICAL REACT DIRECTORIES ===
+No duplicate React directories found
